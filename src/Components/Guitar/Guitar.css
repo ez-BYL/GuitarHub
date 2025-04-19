@@ -1,0 +1,29 @@
+.guitar{
+   margin: 80px auto;
+   width: 90%;
+   text-align: center; 
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.gallery img{
+    width: 20%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.gallery img:hover{
+    transform: scale(1.1);   
+}
+/*media query*/
+@media only screen and (max-width: 800px) {
+ .gallery{
+    flex-wrap: wrap;
+ }
+ .gallery img{
+    width: 48%;
+    margin-bottom: 25px;
+ }
+}
